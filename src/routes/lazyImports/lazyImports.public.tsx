@@ -2,7 +2,7 @@
 
 import { lazyImport } from "../../utils/lazyImport";
 
-const Main = lazyImport("../pages/main/main");
+const AboutMePage = lazyImport("../pages/about-me/about-me");
 const ContactMePage = lazyImport("../pages/contact-me/contact-me");
 
-export { Main, ContactMePage };
+export { AboutMePage, ContactMePage };
