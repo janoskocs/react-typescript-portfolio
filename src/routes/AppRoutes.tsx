@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom";
-import type { routeType } from "./routes/types/router.types";
-import protectedRoutes from "./routes/protected.routes";
-import publicRoutes from "./routes/public.routes";
+import type { routeType } from "./types/router.types";
+import protectedRoutes from "./protected.routes";
+import publicRoutes from "./public.routes";
 
 import { Suspense } from "react";
 // import { Main } from "@/router/lazyImports/lazyImports.public";
