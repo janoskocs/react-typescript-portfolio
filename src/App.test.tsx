@@ -1,5 +1,5 @@
 import { screen, render } from "@testing-library/react";
-import App from "./App";
+import App from "./AppRoutes";
 
 describe("App tests", () => {
   it("should render the title", () => {
