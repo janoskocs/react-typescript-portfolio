@@ -1,5 +1,5 @@
 import DesktopIcons from "./features/desktop-icons/desktop-icons";
-import Taskbar from "./features/taskbar/taskbar";
+import TaskbarFooter from "./features/taskbar-footer/taskbar-footer";
 import { AppRoutes } from "./routes/AppRoutes";
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
     <>
       <DesktopIcons />
       <AppRoutes />
-      <Taskbar />
+      <TaskbarFooter />
     </>
   );
 };

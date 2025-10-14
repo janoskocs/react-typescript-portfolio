@@ -1,11 +1,10 @@
 import type { ComponentKey } from "../routes/lazyImports/lazyImports.public";
-type AppLinkType = "internal" | "external";
 
 type AppType = {
   id: string;
   name: string;
   link: {
-    type: AppLinkType;
+    type: "internal" | "external";
     url: string;
   };
   title: string;
@@ -220,3 +219,4 @@ const apps: AppType[] = [
 ];
 
 export default apps;
+export { type AppType };
