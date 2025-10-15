@@ -43,21 +43,24 @@ const Taskbar = () => {
       return changed ? newRunningApps : prevRunningApps;
     });
   }, [pathname]);
-  console.log(runningApps);
+
   return (
-    <div>
-      running apps
+    <section className="flex w-full">
       {runningApps.map((app) => (
         <Link
           to={app.link.url}
           key={app.id}
           target={app.link.type === "external" ? "_blank" : "_self"}
+          className={`${
+            app.isFocused
+              ? "flex items-center ml-0.5 p-1 md:w-1/5 cursor-pointer button-3d-focused"
+              : "flex items-center ml-0.5 p-1 md:w-1/5 cursor-pointer button-3d"
+          }`}
         >
           {app.name}
-          {app.isFocused && " (focused)"}
         </Link>
       ))}
-    </div>
+    </section>
   );
 };
 

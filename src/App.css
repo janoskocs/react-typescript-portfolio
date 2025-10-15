@@ -1,1 +1,60 @@
 @import "tailwindcss";
+
+@layer components {
+  .button-3d {
+    box-shadow: inset -1px -1px #1f2937, inset 1px 1px #f9fafb,
+      inset -2px -2px #6b7280, inset 2px 2px #d1d5db;
+    text-shadow: 0 0 #111827;
+  }
+
+  .button-3d:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #000,
+      inset -2px -2px #dfdfdf, inset 2px 2px #dfdfdf;
+  }
+  .button-3d:focus {
+    outline: 1px dotted #000;
+    outline-offset: -4px;
+  }
+  .button-3d-focused {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #000,
+      inset -2px -2px #dfdfdf, inset 2px 2px #dfdfdf;
+    font-weight: bold;
+    background-color: #f0f8ff;
+  }
+  .gui-base {
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #4e4e4e;
+    box-shadow: inset -1px -1px #000, inset 1px 1px #dfdfdf,
+      inset -2px -2px #808080, inset 2px 2px #fff;
+  }
+  .gui-box-inset {
+    box-shadow: inset -1px -1px #dfdfdf, inset 1px 1px #808080;
+  }
+  .text-shadow-3d {
+    text-shadow: 1px 1px black;
+  }
+  .window {
+    box-shadow: inset -1px -1px #000, inset 1px 1px #dfdfdf,
+      inset -2px -2px gray, inset 2px 2px #fff;
+  }
+  .gradient {
+    background: linear-gradient(90deg, #000080, #1084d0);
+  }
+  .gradient-vertical {
+    background: linear-gradient(180deg, #000080, #1084d0);
+  }
+  .window-options-button::first-letter {
+    text-decoration: underline;
+  }
+  .window-options-button:hover {
+    box-shadow: inset 1px 1px #fff, inset -1px -1px #000, inset 2px 2px #dfdfdf,
+      inset -2px -2px #dfdfdf;
+  }
+  .window-options-button:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #000,
+      inset -2px -2px #dfdfdf, inset 2px 2px #dfdfdf;
+  }
+  .vertical-lr {
+    writing-mode: vertical-lr;
+  }
+}

@@ -1,11 +1,17 @@
+import SystemTray from "./components/system-tray";
 import Taskbar from "./components/taskbar";
 
 const TaskbarFooter = () => {
   return (
-    <footer>
-      <button>Start</button>
+    <footer className="flex h-[6vh] items-center justify-start py-0.5 w-full fixed bottom-0 bg-stone-300 border-t border-t-stone-200 border-b border-b-stone-400 border-l border-l-stone-200 border-r border-r-stone-400">
+      <button
+        aria-label="Start Menu"
+        className="flex justify-center items-center ml-0.5 py-1 px-3 cursor-pointer button-3d"
+      >
+        <span>Start</span>
+      </button>
       <Taskbar />
-      <div>System Tray</div>
+      <SystemTray />
     </footer>
   );
 };
