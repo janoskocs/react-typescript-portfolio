@@ -8,6 +8,7 @@ const TaskbarFooter = () => {
         aria-label="Start Menu"
         className="flex justify-center items-center ml-0.5 py-1 px-3 cursor-pointer button-3d"
       >
+        <img src="./logo/logo.png" alt="Start Menu" className="w-[24px] mr-1" />
         <span>Start</span>
       </button>
       <Taskbar />

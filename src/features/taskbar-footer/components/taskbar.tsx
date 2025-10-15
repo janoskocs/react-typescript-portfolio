@@ -57,6 +57,11 @@ const Taskbar = () => {
               : "flex items-center ml-0.5 p-1 md:w-1/5 cursor-pointer button-3d"
           }`}
         >
+          <img
+            src={`./icons/${app.icon.src}`}
+            alt={app.icon.alt}
+            className="w-[24px] mr-1"
+          />
           {app.name}
         </Link>
       ))}
