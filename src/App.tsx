@@ -6,8 +6,15 @@ import "./App.css";
 const App = () => {
   return (
     <>
-      <DesktopIcons />
-      <AppRoutes />
+      <div className="flex">
+        <div className="hidden md:block">
+          <DesktopIcons />
+        </div>
+        <main className="flex-1">
+          <AppRoutes />
+        </main>
+      </div>
+
       <TaskbarFooter />
     </>
   );

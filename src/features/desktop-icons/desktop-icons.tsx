@@ -1,20 +1,18 @@
 import apps from "../../data/apps";
-import { Link } from "react-router";
+import DesktopIcon from "./components/desktop-icon";
 
 const DesktopIcons = () => {
   return (
     <>
-      {apps.map((app) => (
-        <Link
-          to={app.link.url}
-          key={app.id}
-          target={app.link.type === "external" ? "_blank" : "_self"}
-        >
-          <div key={app.id} className="desktop-icon">
-            <span>{app.name}</span>
-          </div>
-        </Link>
-      ))}
+      <section>
+        <ul className="flex flex-col flex-wrap h-[92vh] ml-2">
+          {apps.map((icon) => (
+            <li key={icon.id} className="my-6 h-[70] w-[100]">
+              <DesktopIcon icon={icon} />
+            </li>
+          ))}
+        </ul>
+      </section>
     </>
   );
 };
