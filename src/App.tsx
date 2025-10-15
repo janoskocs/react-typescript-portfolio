@@ -6,7 +6,7 @@ import "./App.css";
 const App = () => {
   return (
     <>
-      <div className="flex">
+      <div className="flex bg-teal-600 min-h-screen">
         <div className="hidden md:block">
           <DesktopIcons />
         </div>
