@@ -7,7 +7,7 @@ const DesktopIcons = () => {
       <section>
         <ul className="flex flex-col flex-wrap h-[92vh] ml-2">
           {apps.map((icon) => (
-            <li key={icon.id} className="my-6 h-[70] w-[100]">
+            <li key={icon.id} className="my-4 flex justify-center w-[6rem]">
               <DesktopIcon icon={icon} />
             </li>
           ))}

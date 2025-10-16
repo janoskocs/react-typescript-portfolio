@@ -14,16 +14,16 @@ const DesktopIcon = ({ icon }: DesktopIconProps) => {
       rel="noopener noreferrer"
       className="group flex flex-col items-center justify-center text-center"
     >
-      <div key={icon.id} className="desktop-icon">
-        <img
-          src={`/icons/${icon.icon.src}`}
-          alt={icon.icon.alt}
-          className="w-12 h-12"
-        />
-        <span className="text-sm mt-1 p-0.5 text-white text-shadow-3d group-hover:bg-blue-950">
-          {icon.name.length > 21 ? icon.name.slice(0, 20) + "..." : icon.name}
-        </span>
-      </div>
+      {/* <div key={icon.id} className="desktop-icon"> */}
+      <img
+        src={`/icons/${icon.icon.src}`}
+        alt={icon.icon.alt}
+        className="w-12 h-12"
+      />
+      <span className="text-sm mt-1 p-0.5 text-white text-shadow-3d group-hover:bg-blue-950">
+        {icon.name.length > 21 ? icon.name.slice(0, 20) + "..." : icon.name}
+      </span>
+      {/* </div> */}
     </Link>
   );
 };
