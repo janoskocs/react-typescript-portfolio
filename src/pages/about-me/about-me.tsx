@@ -8,9 +8,7 @@ const AboutMePage = () => {
   return (
     <>
       <Window isFocused={true}>
-        <WindowTitleBar icon="/assets/icons/about-me.png">
-          About me
-        </WindowTitleBar>
+        <WindowTitleBar icon="/icons/about-me.png">About me</WindowTitleBar>
         {/* <WindowOptions>
         <button className="bg-stone-300 window-options-button cursor-pointer p-0.5 mr-0.5">
           Email me
