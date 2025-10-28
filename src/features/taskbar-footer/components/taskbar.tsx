@@ -62,7 +62,7 @@ const Taskbar = () => {
             alt={app.icon.alt}
             className="w-[24px] mr-1"
           />
-          {app.name}
+          <span className="hidden md:inline">{app.name}</span>
         </Link>
       ))}
     </section>
