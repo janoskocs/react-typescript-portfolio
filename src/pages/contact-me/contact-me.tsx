@@ -2,8 +2,18 @@ import WindowContent from "../../components/WindowContent/WindowContent";
 import WindowFooter from "../../components/WindowFooter/WindowFooter";
 import Window from "../../components/Window/Window";
 import WindowTitleBar from "../../components/WindowTitleBar/WindowTitleBar";
+import { useState } from "react";
+import ContactMeForm from "../../features/contact-me-form/contact-me-form";
 
 const ContactMePage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState<{
+    title: string;
+    text: string;
+  }>({
+    title: "",
+    text: "",
+  });
   return (
     <>
       <Window isFocused={true}>
@@ -18,38 +28,29 @@ const ContactMePage = () => {
       </WindowOptions> */}
         <WindowContent>
           <div className="p-4">
-            <div>
-              <h1 className="font-bold">
-                János Kócs | Software Engineer Portfolio
-              </h1>
+            <div className="p-0.5 flex flex-col md:flex-row gap-4">
+              {/* <div>
+              <Image
+                src="/assets/icons/contact-me.png"
+                width={64}
+                height={64}
+                alt="Contact Me"
+                className="mb-4 rounded m-auto block"
+              />
+            </div> */}
+              <div>
+                <h2 className="text-lg font-bold mb-2">Get in Touch</h2>
+                <p className="mb-4">
+                  I&apos;d love to hear from you! Whether you have a question,
+                  feedback, or just want to say hello, feel free to reach out
+                  using the form below.
+                </p>
+                <ContactMeForm
+                  setModalContent={setModalContent}
+                  setIsModalOpen={setIsModalOpen}
+                />
+              </div>
             </div>
-            {/* <DividerLine orientation="horizontal" /> */}
-
-            <p>
-              Hey there, I&apos;m János, I&apos;m making the web more
-              interactive. When I was a kid, my computer ran Windows 98, and it
-              was the coolest thing ever. That&apos;s where I got the
-              inspiration for my epic portfolio website.
-            </p>
-            {/* <DividerLine orientation="horizontal" /> */}
-
-            <h2 className="mt-2">I make these components work together</h2>
-            {/* <ul className="flex flex-wrap justify-center">
-              {skills.map((skill) => (
-                <li
-                  key={skill.id}
-                  className="text-center m-3 flex flex-col items-center"
-                >
-                  <Image
-                    src={skill.image}
-                    alt={skill.alt}
-                    width={64}
-                    height={64}
-                  />
-                  <span>{skill.name}</span>
-                </li>
-              ))}
-            </ul> */}
           </div>
         </WindowContent>
 
