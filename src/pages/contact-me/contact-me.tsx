@@ -18,26 +18,18 @@ const ContactMePage = () => {
     <>
       <Window isFocused={true}>
         <WindowTitleBar icon="/icons/contact-me.png">Contact me</WindowTitleBar>
-        {/* <WindowOptions>
-        <button className="bg-stone-300 window-options-button cursor-pointer p-0.5 mr-0.5">
-          Email me
-        </button>
-        <button className="bg-stone-300 window-options-button cursor-pointer p-0.5 mr-0.5">
-          LinkedIn
-        </button>
-      </WindowOptions> */}
         <WindowContent>
           <div className="p-4">
             <div className="p-0.5 flex flex-col md:flex-row gap-4">
-              {/* <div>
-              <Image
-                src="/assets/icons/contact-me.png"
-                width={64}
-                height={64}
-                alt="Contact Me"
-                className="mb-4 rounded m-auto block"
-              />
-            </div> */}
+              <div>
+                <img
+                  src="/icons/contact-me.png"
+                  width={64}
+                  height={64}
+                  alt="Contact Me"
+                  className="mb-4 rounded m-auto block"
+                />
+              </div>
               <div>
                 <h2 className="text-lg font-bold mb-2">Get in Touch</h2>
                 <p className="mb-4">
