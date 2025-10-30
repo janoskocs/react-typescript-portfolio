@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+.grecaptcha-badge {
+  bottom: 60px !important;
+}
 @layer components {
   .button-3d {
     box-shadow: inset -1px -1px #1f2937, inset 1px 1px #f9fafb,
