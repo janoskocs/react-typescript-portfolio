@@ -2,8 +2,6 @@ import Window from "../../components/window/window";
 import WindowTitleBar from "../../components/window-title-bar/window-title-bar";
 import WindowContent from "../../components/window-content/window-content";
 import WindowFooter from "../../components/window-footer/window-footer";
-// import WindowOptions from "@/components/WindowOptions/WindowOptions";
-
 const AboutMePage = () => {
   return (
     <>
