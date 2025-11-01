@@ -1,8 +1,8 @@
-import WindowContent from "../../components/WindowContent/WindowContent";
-import WindowFooter from "../../components/WindowFooter/WindowFooter";
-import Window from "../../components/Window/Window";
-import WindowTitleBar from "../../components/WindowTitleBar/WindowTitleBar";
-import AIChat from "../../features/ai-chat/AIChat";
+import Window from "../../components/window/window";
+import WindowTitleBar from "../../components/window-title-bar/window-title-bar";
+import WindowContent from "../../components/window-content/window-content";
+import WindowFooter from "../../components/window-footer/window-footer";
+import AIChat from "../../features/ai-chat/ai-chat";
 
 const JanosAIPage = () => {
   return (

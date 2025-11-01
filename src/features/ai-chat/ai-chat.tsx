@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useLayoutEffect, useState, useRef } from "react";
-import ChatMessage from "./components/ChatMessage";
+import ChatMessage from "./components/chat-message";
 import type { ChatMessageType } from "./types/chat-message-types";
 
 const AIChat = () => {
