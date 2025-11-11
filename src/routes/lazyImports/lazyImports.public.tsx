@@ -1,6 +1,4 @@
 // https://github.com/ArnaudBarre/eslint-plugin-react-refresh/issues/25#issuecomment-1729071347
-
-import type { ReactNode } from "react";
 import { lazyImport } from "../../utils/lazyImport";
 
 const AboutMePage: React.LazyExoticComponent<React.ComponentType<{}>> =

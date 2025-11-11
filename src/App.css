@@ -60,6 +60,9 @@
   .vertical-lr {
     writing-mode: vertical-lr;
   }
+  .pulse {
+    animation: pulse-animation 1s infinite;
+  }
 
   @keyframes pulse-animation {
     0% {
