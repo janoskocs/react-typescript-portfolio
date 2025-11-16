@@ -1,6 +1,6 @@
 import apps from "../../data/apps";
-import { Link } from "react-router-dom";
 import clsx from "clsx";
+import StartMenuIcon from "./components/start-menu-icon";
 type StartMenuProps = {
   isStartMenuOpen: boolean;
   setIsStartMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -28,23 +28,10 @@ const StartMenu = ({ isStartMenuOpen, setIsStartMenuOpen }: StartMenuProps) => {
         {apps &&
           apps.map((app) => (
             <li key={app.id} className="mb-[2px] last-of-type:mb-0">
-              <Link
-                to={app.link.url}
-                className="flex hover:bg-blue-950 hover:text-white p-1"
-                target={app.link.type === "external" ? "_blank" : "_self"}
-                rel="noopener noreferrer"
-                tabIndex={0}
-                onClick={() => setIsStartMenuOpen(false)}
-              >
-                <img
-                  src={`/icons/${app.icon.src}`}
-                  width={32}
-                  height={32}
-                  alt={app.icon.alt}
-                  className="mr-2"
-                />
-                <p>{app.name}</p>
-              </Link>
+              <StartMenuIcon
+                app={app}
+                setIsStartMenuOpen={setIsStartMenuOpen}
+              />
             </li>
           ))}
       </ul>
