@@ -2,6 +2,7 @@
 import { useEffect, useLayoutEffect, useState, useRef } from "react";
 import ChatMessage from "./components/chat-message";
 import type { ChatMessageType } from "./types/chat-message-types";
+import SendButton from "./components/send-button";
 
 const AIChat = () => {
   const [message, setMessage] = useState("");
@@ -130,7 +131,6 @@ const AIChat = () => {
           className="bg-white gui-box-inset grow resize-none"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          onKeyPress={handleKeyPress}
           disabled={isLoading}
           placeholder={
             isLoading
@@ -139,15 +139,11 @@ const AIChat = () => {
           }
           rows={1}
         />
-        <button
-          className={`button-3d p-5 ml-2 ${
-            isLoading ? "opacity-50 cursor-not-allowed" : ""
-          }`}
-          onClick={handleSubmit}
-          disabled={isLoading || !message.trim()}
-        >
-          Send
-        </button>
+        <SendButton
+          isLoading={isLoading}
+          onClickHandler={handleSubmit}
+          disabled={isLoading || message.trim() === ""}
+        />
       </div>
     </section>
   );
