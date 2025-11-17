@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Window Component > should match snapshot when isFocused is false 1`] = `<DocumentFragment />`;
+
+exports[`Window Component > should match snapshot when isFocused is true 1`] = `
+<DocumentFragment>
+  <section
+    class="flex window border-t border-gray-100 border-b-gray-600 p-0.5 px-0.5 py-px flex-col justify-between items-stretch flex-nowrap bg-stone-300 m-2 h-[90vh] xl:w-[50vw] xl:mx-auto"
+  >
+    <div>
+      Snapshot Content
+    </div>
+  </section>
+</DocumentFragment>
+`;

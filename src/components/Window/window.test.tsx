@@ -17,4 +17,20 @@ describe("Window Component", () => {
     );
     expect(window.queryByTestId("child")).not.toBeInTheDocument();
   });
+  it("should match snapshot when isFocused is true", () => {
+    const window = render(
+      <Window isFocused={true}>
+        <div>Snapshot Content</div>
+      </Window>
+    );
+    expect(window.asFragment()).toMatchSnapshot();
+  });
+  it("should match snapshot when isFocused is false", () => {
+    const window = render(
+      <Window isFocused={false}>
+        <div>Snapshot Content</div>
+      </Window>
+    );
+    expect(window.asFragment()).toMatchSnapshot();
+  });
 });
