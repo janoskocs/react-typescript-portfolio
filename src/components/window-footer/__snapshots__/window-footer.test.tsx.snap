@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WindowFooter Component > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="gui-box-inset mb-0.5 mx-0.5"
+  >
+    Snapshot Content
+  </div>
+</DocumentFragment>
+`;
