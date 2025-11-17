@@ -7,7 +7,9 @@ const MyCVPage = () => {
   return (
     <>
       <Window isFocused={true}>
-        <WindowTitleBar icon="/icons/my-cv.png">My CV</WindowTitleBar>
+        <WindowTitleBar icon="/icons/my-cv.png" iconAlt="Document">
+          My CV
+        </WindowTitleBar>
         {/* <WindowOptions>
         <button className="bg-stone-300 window-options-button cursor-pointer p-0.5 mr-0.5">
           Email me

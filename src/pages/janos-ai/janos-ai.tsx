@@ -8,7 +8,12 @@ const JanosAIPage = () => {
   return (
     <>
       <Window isFocused={true}>
-        <WindowTitleBar icon="/icons/janos-ai.png">JanosAI</WindowTitleBar>
+        <WindowTitleBar
+          icon="/icons/janos-ai.png"
+          iconAlt="Book with a question mark"
+        >
+          JanosAI
+        </WindowTitleBar>
         <WindowContent>
           <div className="p-4 h-full">
             <AIChat />

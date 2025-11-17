@@ -7,7 +7,7 @@ const MyProjectsPage = () => {
   return (
     <>
       <Window isFocused={true}>
-        <WindowTitleBar icon="/icons/my-projects.png">
+        <WindowTitleBar icon="/icons/my-projects.png" iconAlt="Open folder">
           My Projects
         </WindowTitleBar>
         {/* <WindowOptions>

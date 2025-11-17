@@ -17,7 +17,12 @@ const ContactMePage = () => {
   return (
     <>
       <Window isFocused={true}>
-        <WindowTitleBar icon="/icons/contact-me.png">Contact me</WindowTitleBar>
+        <WindowTitleBar
+          icon="/icons/contact-me.png"
+          iconAlt="Envelope and a globe"
+        >
+          Contact me
+        </WindowTitleBar>
         <WindowContent>
           <div className="p-4">
             <div className="p-0.5 flex flex-col md:flex-row gap-4">
