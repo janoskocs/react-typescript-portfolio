@@ -3,14 +3,13 @@ import type { ReactNode } from "react";
 type WindowTitleBarProps = {
   children: ReactNode;
   icon: string;
+  iconAlt: string;
 };
-const WindowTitleBar = ({ children, icon }: WindowTitleBarProps) => {
-  const currentApp = icon.split("/");
-
+const WindowTitleBar = ({ children, icon, iconAlt }: WindowTitleBarProps) => {
   return (
     <div className="m-0.5 p-1 flex flex-row items-center justify-between gradient">
       <div className="flex text-white">
-        <img src={icon} alt="" width={24} height={24} className="mr-2" />
+        <img src={icon} alt={iconAlt} width={24} height={24} className="mr-2" />
         {children}
       </div>
       <div className="flex self-end">

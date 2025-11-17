@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WindowTitleBar Component > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="m-0.5 p-1 flex flex-row items-center justify-between gradient"
+  >
+    <div
+      class="flex text-white"
+    >
+      <img
+        alt="Retro computer"
+        class="mr-2"
+        height="24"
+        src="/icons/about-me.png"
+        width="24"
+      />
+      Test Content
+    </div>
+    <div
+      class="flex self-end"
+    />
+  </div>
+</DocumentFragment>
+`;
