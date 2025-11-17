@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WindowOptions Component > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="p-1 items-start"
+  >
+    Snapshot Content
+  </div>
+</DocumentFragment>
+`;
