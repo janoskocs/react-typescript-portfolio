@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Taskbar > matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="flex w-full"
+  >
+    <a
+      class="flex items-center ml-0.5 p-1 md:w-1/5 cursor-pointer button-3d-focused"
+      data-discover="true"
+      href="/about-me"
+      target="_self"
+    >
+      <img
+        alt="Profile icon"
+        class="w-[24px] mr-1"
+        src="./icons/about-me.png"
+      />
+      <span
+        class="hidden md:inline"
+      >
+        About Me
+      </span>
+    </a>
+  </section>
+</DocumentFragment>
+`;

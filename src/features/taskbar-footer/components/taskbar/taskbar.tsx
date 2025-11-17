@@ -1,9 +1,8 @@
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import apps from "../../../data/apps";
-import type { AppType as OriginalAppType } from "../../../data/apps";
-import path from "path";
+import apps from "../../../../data/apps";
+import type { AppType as OriginalAppType } from "../../../../data/apps";
 
 type AppWithFocus = OriginalAppType & { isFocused?: boolean };
 

@@ -1,5 +1,5 @@
 import SystemTray from "./components/system-tray";
-import Taskbar from "./components/taskbar";
+import Taskbar from "./components/taskbar/taskbar";
 
 type TaskbarFooterProps = {
   setIsStartMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
