@@ -48,9 +48,8 @@ describe("Taskbar Component", () => {
 
   it("switches focus between internal apps when route changes", () => {
     const about = apps.find((a) => a.id === "about-me")!;
-    const contact = apps.find((a) => a.id === "contact-me")!;
 
-    const { rerender } = render(
+    render(
       <MemoryRouter initialEntries={[about.link.url]}>
         <Taskbar />
       </MemoryRouter>

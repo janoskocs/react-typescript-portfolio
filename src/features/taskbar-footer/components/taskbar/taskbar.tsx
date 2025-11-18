@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
+import TaskbarApp from "../taskbar-app/taskbar-app";
 import apps from "../../../../data/apps";
 import type { AppType as OriginalAppType } from "../../../../data/apps";
 
@@ -46,23 +46,7 @@ const Taskbar = () => {
   return (
     <section className="flex w-full">
       {runningApps.map((app) => (
-        <Link
-          to={app.link.url}
-          key={app.id}
-          target={app.link.type === "external" ? "_blank" : "_self"}
-          className={`${
-            app.isFocused
-              ? "flex items-center ml-0.5 p-1 md:w-1/5 cursor-pointer button-3d-focused"
-              : "flex items-center ml-0.5 p-1 md:w-1/5 cursor-pointer button-3d"
-          }`}
-        >
-          <img
-            src={`./icons/${app.icon.src}`}
-            alt={app.icon.alt}
-            className="w-[24px] mr-1"
-          />
-          <span className="hidden md:inline">{app.name}</span>
-        </Link>
+        <TaskbarApp key={app.id} app={app} />
       ))}
     </section>
   );
