@@ -1,4 +1,4 @@
-import SystemTray from "./components/system-tray";
+import SystemTray from "./components/system-tray/system-tray";
 import Taskbar from "./components/taskbar/taskbar";
 
 type TaskbarFooterProps = {
